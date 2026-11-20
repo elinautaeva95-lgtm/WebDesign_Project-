@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #393743;
+}
+
+.container {
+  max-width: 1060px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+p { margin: 0; }
+
+/* шапка */
+.header { background: #dff16a; }
+.header-content { min-height: 117px; padding-top: 18px; padding-bottom: 18px; }
+.logo { font-size: 60px; line-height: 1; color: #000; }
+.menu { gap: 40px; }
+.menu a { color: #171717; text-decoration: none; }
+.cart img { width: 20px; }
+
+/* бегущая строка */
+.marquee { overflow: hidden; padding: 74px 0 46px; }
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+.marquee span {
+  margin-right: 40px;
+  font-size: 60px;
+  line-height: 1;
+  color: #dedede;
+  white-space: nowrap;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* контент */
+.main { padding-top: 19px; padding-bottom: 84px; }
+.breadcrumb { margin: 0; color: #a3a3a3; }
+h1 { margin-top: 16px; margin-bottom: 66px; font-size: 36px; font-weight: normal; line-height: 1.2; }
+.sponsors-list p { margin-bottom: 24px; }
+.sponsors-list p:last-child { margin-bottom: 0; }
+
+/* подвал */
+.footer { padding-top: 86px; background: #393743; color: #ddd; }
+.footer-content { padding-bottom: 50px; }
+.footer ul { margin-bottom: 0; list-style: none; }
+.footer-contacts { text-align: right; }
+.footer-contacts p + p { margin-top: 5px; }
+.footer a { color: #ddd; }
+.footer-bottom { gap: 12px; padding-bottom: 56px; }
+.footer-logo { font-size: 36px; line-height: 1; }
